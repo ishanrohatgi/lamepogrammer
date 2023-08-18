@@ -1,0 +1,21 @@
+.navbar{
+    height: 60px;
+    background-color:rgb(27, 150, 255);
+    color: white;
+}
+.main-content{
+    padding-top: 30vh
+}
+.joke-card{
+    width:  60vw;
+}
+.refresh-button{
+    display: flex;
+    justify-content: center;
+    
+}
+@media screen and (max-width:500px) {
+    .joke-card{
+        width: 80vw;
+    }
+}

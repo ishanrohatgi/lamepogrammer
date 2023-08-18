@@ -26,10 +26,17 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+               {
+                "glob": "**/*",
+                "input": "node_modules/@salesforce-ux/design-system/assets/",
+                "output": "/assets"
+               },
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
+              "node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css",
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -93,6 +100,8 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css",
+              "node_modules/@angular/cdk/overlay-prebuilt.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,5 +109,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "4d1bdb66-45f7-4443-9352-b116b899acbf"
   }
 }
